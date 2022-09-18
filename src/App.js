@@ -1,5 +1,5 @@
 
-//import './App.css';
+import './App.css';
 import React, { useState } from 'react';
 
 const App = () => {
@@ -29,12 +29,19 @@ const App = () => {
 
 
   return (
-    <div >
-      <h1>COUNTER APP</h1>
-      <h1>Count: {count}</h1>
-      <button onClick={add}>Add</button>
+    <div className='container'>
+      <h1 className='heading'>COUNTER APP</h1>
+      <h1 className='countText'>Count: {count}</h1>
+ 
+
+
+ <div className='buttonsRow'>
+ <button onClick={add}>Add</button>
       <button onClick={subtract}>Subtract</button>
       <button onClick={reset}>Reset</button>
+
+ </div>
+    
     </div>
   );
 }
